@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#10251d">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Explora el catálogo de El Club Licorería en El Dovio, Valle del Cauca. Consulta disponibilidad y realiza tu pedido por WhatsApp. Venta exclusiva a mayores de edad.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="El Club Licorería · El Dovio">
+  <meta property="og:description" content="Descubre la selección de El Club Licorería y consulta disponibilidad por WhatsApp.">
+  <meta property="og:locale" content="es_CO">
+  <title>El Club Licorería | Catálogo en El Dovio, Valle del Cauca</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Verificación de edad -->
+  <div id="ageGate" class="age-gate" aria-modal="true" role="dialog" aria-labelledby="ageTitle" aria-describedby="ageDescription">
+    <div class="age-gate__panel">
+      <div class="age-gate__brand">
+        <img src="assets/logo-el-club-dorado-final.webp" alt="El Club Licorería">
+      </div>
+      <span class="kicker">EL DOVIO · VALLE DEL CAUCA</span>
+      <h1 id="ageTitle">Bienvenido a<br><em>El Club.</em></h1>
+      <p id="ageDescription">Este sitio es para personas mayores de edad. Confirma para continuar.</p>
+      <div class="age-gate__buttons">
+        <button id="enterBtn" class="button button--dark" type="button">Sí, soy mayor de edad <span>→</span></button>
+        <button id="exitBtn" class="button button--light" type="button">No, salir</button>
+      </div>
+      <p id="ageError" class="age-error" tabindex="-1" aria-live="polite" hidden>Debes ser mayor de edad para ingresar.</p>
+      <small>El exceso de alcohol es perjudicial para la salud. Prohibida la venta y el suministro a menores de 18 años.</small>
+    </div>
+  </div>
+
+  <div id="app" class="app" aria-hidden="true" inert>
+    <div class="announcement">
+      <span>EL CLUB LICORERÍA</span>
+      <span>EL DOVIO · VALLE DEL CAUCA</span>
+      <span>VENTA EXCLUSIVA A MAYORES DE EDAD</span>
+    </div>
+
+    <header class="header">
+      <a href="#inicio" class="wordmark" aria-label="El Club Licorería">
+        <img src="assets/logo-el-club-dorado-final.webp" alt="El Club Licorería">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#seleccion">Selección</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#ubicacion">Encuéntranos</a>
+      </nav>
+
+      <a class="header-cta" href="#seleccion">Ver selección <span>↗</span></a>
+
+      <button id="menuBtn" class="menu-button" type="button" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+        <b>Menú</b>
+      </button>
+    </header>
+
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <a href="#inicio">Inicio</a>
+      <a href="#seleccion">Selección</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#ubicacion">Encuéntranos</a>
+    </div>
+
+    <main>
+      <section id="inicio" class="hero">
+        <a class="hero__brand" href="#inicio" aria-label="El Club Licorería, inicio"><img src="assets/logo-el-club-dorado-final.webp" alt="El Club Licorería"></a>
+        <div class="hero__copy">
+          <span class="kicker">LICORERÍA · EL DOVIO</span>
+          <h1>Lo bueno de<br><em>compartir.</em></h1>
+          <p>Una selección de licores para esos momentos que merecen algo especial.</p>
+          <div class="hero__actions">
+            <a class="button button--dark" href="#seleccion">Descubrir selección <span>↓</span></a>
+            <a class="text-link" href="#horarios">Ver horarios <span>→</span></a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__orb"></div>
+          <div class="hero__bottle hero__bottle--left"><img src="assets/don-julio.webp" alt=""></div>
+          <div class="hero__bottle hero__bottle--main"><img src="assets/grey-goose.webp" alt=""></div>
+          <div class="hero__bottle hero__bottle--right"><img src="assets/ron-viejo-de-caldas.webp" alt=""></div>
+          <div class="hero__label">EL<br>CLUB</div>
+        </div>
+
+        <div class="hero__bottom">
+          <span>01</span>
+          <div></div>
+          <span>EL DOVIO, VALLE</span>
+        </div>
+      </section>
+
+      <section class="intro section">
+        <div class="intro__number">02</div>
+        <div>
+          <span class="kicker">LA EXPERIENCIA</span>
+          <h2>Una licorería con<br><em>personalidad propia.</em></h2>
+        </div>
+        <p>En El Club creemos que una buena botella no es solo una bebida: es parte de la conversación, la celebración y el momento. Estamos en El Dovio para acompañarte con una selección pensada para disfrutar.</p>
+      </section>
+
+      <section id="seleccion" class="selection section">
+  <div class="section-head catalog-heading">
+    <div>
+      <span class="kicker">CATÁLOGO DEL CLUB · TODOS LOS PRODUCTOS</span>
+      <h2>Encuentra tu<br><em>próximo favorito.</em></h2>
+    </div>
+    <p>Busca por nombre o explora el catálogo por categorías. Sin precios: consulta disponibilidad directamente con El Club.</p>
+  </div>
+
+  <div class="catalog-tools">
+    <label class="catalog-search" for="catalogSearch">
+      <span aria-hidden="true">⌕</span>
+      <input id="catalogSearch" type="search" placeholder="Buscar licores, marcas o productos…" autocomplete="off">
+      <button id="clearSearch" type="button" aria-label="Limpiar búsqueda" hidden>×</button>
+    </label>
+    <div class="catalog-meta">
+      <span id="catalogCount" aria-live="polite">Cargando catálogo…</span>
+      <label class="catalog-sort-label" for="catalogSort">Ordenar
+        <select id="catalogSort" class="catalog-sort">
+          <option value="featured">Recomendados</option>
+          <option value="name-asc">Nombre: A–Z</option>
+          <option value="name-desc">Nombre: Z–A</option>
+          <option value="category">Categoría</option>
+        </select>
+      </label>
+      <span>Precios y disponibilidad por WhatsApp</span>
+    </div>
+  </div>
+
+  <nav id="categoryFilters" class="category-filters" aria-label="Filtrar por categoría">
+    <button class="category-chip is-active" type="button" data-category="__all" aria-pressed="true">Ver todo</button>
+  </nav>
+
+  <div id="catalogGrid" class="products products--catalog catalog-grid" aria-label="Productos del catálogo" aria-live="polite"></div>
+  <p id="catalogEmpty" class="catalog-empty" hidden>No encontramos productos con esa búsqueda. Prueba con otro nombre o categoría.</p>
+  <div class="catalog-more-wrap"><button id="loadMoreProducts" class="button button--dark" type="button">Cargar más productos <span>↓</span></button></div>
+</section>
+
+<section class="statement">
+        <div class="statement__inner">
+          <span class="kicker">PARA CADA OCASIÓN</span>
+          <h2>La botella correcta<br>cambia el <em>momento.</em></h2>
+          <div class="statement__line"></div>
+          <p>Descubre una selección para celebrar, regalar o simplemente disfrutar como te gusta.</p>
+        </div>
+      </section>
+
+      <section id="horarios" class="hours section">
+        <div class="hours__aside">
+          <span class="kicker">03 · HORARIOS</span>
+          <h2>Cuando<br><em>quieras.</em></h2>
+          <p>Visítanos en El Dovio, Valle del Cauca.</p>
+        </div>
+
+        <div class="hours__content">
+          <div class="hours__row">
+            <div>
+              <span class="day">Lunes — Viernes</span>
+              <small>Entre semana</small>
+            </div>
+            <strong>10:30 AM<br><i>—</i> 12:00 AM</strong>
+          </div>
+          <div class="hours__row">
+            <div>
+              <span class="day">Sábado — Domingo</span>
+              <small>Fin de semana</small>
+            </div>
+            <strong>10:30 AM<br><i>—</i> 2:00 AM</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="ubicacion" class="location">
+        <div class="location__visual">
+          <iframe
+            title="Ubicación de El Club Licorería en El Dovio"
+            src="https://maps.google.com/maps?q=4.512912%2C-76.2375066&z=17&hl=es&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+          <a class="location__map-link" href="https://www.google.com/maps?q=4.512912,-76.2375066" target="_blank" rel="noopener noreferrer">Abrir mapa ↗</a>
+        </div>
+        <div class="location__copy">
+          <span class="kicker">04 · ENCUÉNTRANOS</span>
+          <h2>El Dovio,<br><em>Valle del Cauca.</em></h2>
+          <p>Visítanos en nuestro local en El Dovio. Usa la ubicación exacta para llegar sin complicaciones.</p>
+          <div class="location__address">
+            <span class="location__address-label">UBICACIÓN DEL LOCAL</span>
+            <strong>GQ76+5X9, El Dovio, Valle del Cauca</strong>
+            <span>Coordenadas: 4.512912, -76.2375066</span>
+          </div>
+          <div class="location__actions">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=4.512912%2C-76.2375066" class="button button--dark" target="_blank" rel="noopener noreferrer">Cómo llegar <span>↗</span></a>
+            <a href="#horarios" class="location__hours-link">Ver horario</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="delivery-cta" aria-labelledby="deliveryTitle">
+        <div class="delivery-cta__icon" aria-hidden="true">
+          <svg viewBox="0 0 96 64" role="img" aria-label="">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5">
+              <circle cx="23" cy="46" r="12"/>
+              <circle cx="72" cy="46" r="12"/>
+              <path d="M23 46 36 27h17l10 19H43L34 35"/>
+              <path d="M47 27l-5-8h-9M50 27h10l8 10"/>
+              <path d="M57 18h18v16H62"/>
+              <path d="M59 18v-5h14v5"/>
+              <path d="M68 13h8"/>
+              <path d="M35 27h-8"/>
+            </g>
+            <path d="M61 20h12v11H61z" fill="currentColor" opacity=".14"/>
+          </svg>
+          <span class="delivery-cta__spark delivery-cta__spark--one">✦</span>
+          <span class="delivery-cta__spark delivery-cta__spark--two">✦</span>
+        </div>
+        <div class="delivery-cta__copy">
+          <span class="kicker">TE LO LLEVAMOS</span>
+          <h2 id="deliveryTitle">¡Haz tu domicilio!</h2>
+          <p>¿Antojo de algo especial? 🥂 Escríbenos por WhatsApp y te ayudamos con tu pedido.</p>
+        </div>
+        <a
+          class="button button--whatsapp delivery-cta__button"
+          href="https://wa.me/573105258221?text=%C2%A1Hola%2C%20El%20Club%20Licorer%C3%ADa%21%20%F0%9F%9B%B5%F0%9F%A5%82%0AQuiero%20hacer%20un%20pedido%20a%20domicilio.%20%C2%BFMe%20ayudan%20con%20la%20disponibilidad%20y%20el%20valor%20de%20mi%20pedido%3F%20%F0%9F%98%8A%0A%C2%A1Muchas%20gracias%21"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Hacer un domicilio por WhatsApp">
+          <svg class="whatsapp-mark" aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 2 17.7L.5 23.5l6-1.6A11.8 11.8 0 0 0 20.5 3.5ZM12 21a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.5.9.9-3.4-.2-.4A9.8 9.8 0 1 1 12 21Zm5.4-7.3c-.3-.2-1.7-.8-2-.9s-.5-.2-.7.2-.8.9-1 1.1-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5s0-.4 0-.5-.7-1.6-.9-2.2c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.2 3 .2.3 2.1 3.2a10.2 10.2 0 0 0 4 2.5c.5.2 1 .3 1.3.4.6.2 1.1.1 1.5.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.2-1.3s-.2-.2-.5-.4Z"/></svg>
+          <span>Escribir por WhatsApp</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </main>
+
+
+  <!-- Carrito y panel de pedido -->
+  <button id="cartFab" class="cart-fab" type="button" aria-label="Abrir carrito de compras" aria-controls="cartPanel" aria-expanded="false">
+    <span class="cart-fab__icon" aria-hidden="true">🛒</span>
+    <span>Mi carrito</span>
+    <b id="cartFabCount" class="cart-count">0</b>
+  </button>
+  <div id="cartBackdrop" class="cart-backdrop" hidden></div>
+  <aside id="cartPanel" class="cart-panel" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-panel__header">
+      <div><span class="kicker">EL CLUB LICORERÍA</span><h2>Tu carrito</h2></div>
+      <button id="cartClose" class="cart-close" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+    <p class="cart-intro">Revisa los productos y las cantidades antes de enviar tu pedido.</p>
+    <div id="cartItems" class="cart-items"></div>
+    <div id="cartEmpty" class="cart-empty">Tu carrito está vacío.<br><span>Agrega productos del catálogo para comenzar.</span></div>
+    <div class="cart-panel__footer">
+      <div class="cart-summary"><span>Productos</span><strong id="cartTotalItems">0 unidades</strong></div>
+      <button id="checkoutWhatsApp" class="button button--whatsapp" type="button">
+        <svg class="whatsapp-mark" aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 2 17.7L.5 23.5l6-1.6A11.8 11.8 0 0 0 20.5 3.5ZM12 21a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.5.9.9-3.4-.2-.4A9.7 9.7 0 1 1 12 21Zm5.4-7.3c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-.9 1.1-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.2-.5c.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.2 1.4 3.4a11.7 11.7 0 0 0 4.5 4c.6.2 1.1.4 1.5.5.6.2 1.2.2 1.7.1.5-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4s-.2-.2-.5-.3Z"/></svg> Pedir por WhatsApp
+      </button>
+      <small>El asesor confirmará disponibilidad y te preguntará la dirección del domicilio.</small>
+    </div>
+  </aside>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <img src="assets/logo-el-club-dorado-final.webp" alt="El Club Licorería">
+        <div class="footer__links">
+          <a href="#inicio">Inicio</a>
+          <a href="#seleccion">Selección</a>
+          <a href="#horarios">Horarios</a>
+          <a href="#ubicacion">Ubicación</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> El Club Licorería</span>
+        <span>El Dovio · Valle del Cauca</span>
+        <span>El exceso de alcohol es perjudicial para la salud.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="catalog-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
